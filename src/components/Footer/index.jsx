@@ -28,7 +28,7 @@ const Footer = () => {
   return (
     <ContainerFooter>
       <Container>
-        <Logo src={logo}/>
+        <Logo src={logo} alt="logo"/>
 
         <List>
           {links.map(link => {
@@ -43,10 +43,10 @@ const Footer = () => {
 
       <Container>
           <SocialContainer>
-            <LinkSocial href="/"><Facebook /></LinkSocial>
-            <LinkSocial href="/"><Twitter /></LinkSocial>
-            <LinkSocial href="/"><Pinterest /></LinkSocial>
-            <LinkSocial href="/"><Instagram /></LinkSocial>
+            <LinkSocial href="/" aria-label="Facebook"><Facebook /></LinkSocial>
+            <LinkSocial href="/" aria-label="Twitter"><Twitter /></LinkSocial>
+            <LinkSocial href="/" aria-label="Pinterest"><Pinterest /></LinkSocial>
+            <LinkSocial href="/" aria-label="Instagram"><Instagram /></LinkSocial>
           </SocialContainer>
 
           <Rights>© 2023 Loopstudios. All rights reserved.</Rights>
