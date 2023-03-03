@@ -15,8 +15,8 @@ const Highlight = ({ size }) => {
   return (
     <ContainerHighlight>
       {size < 1024 
-        ? <Image src={highlightImageMobile}/>
-        : <Image src={highlightImageDesktop}/>
+        ? <Image src={highlightImageMobile} alt="Image Hero"/>
+        : <Image src={highlightImageDesktop} alt="Image Hero"/>
       }
 
       <ContainerText>
