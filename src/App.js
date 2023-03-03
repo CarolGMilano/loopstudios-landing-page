@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import GlobalStyles from "./components/GlobalStyles";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
+
+  const getWidthScreen = () => {
+    const { innerWidth: width } = window;   
+    return width;
+  }
+  
+  let [size, setSize] = useState(getWidthScreen());
+
+  window.addEventListener('resize', function () {
+    return setSize(getWidthScreen());
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+      <Header size={size}/>
+      <Main size={size}/>
+      <Footer />
+    </>
   );
 }
 
