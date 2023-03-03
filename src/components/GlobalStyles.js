@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle `
   body {
     background-color: ${white};
     font-family: ${josefinSans};
+    overflow-x: hidden;
   }
 `;
 
