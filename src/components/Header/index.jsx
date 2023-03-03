@@ -27,7 +27,7 @@ const Header = ({ size }) => {
   return (
     <ContainerHeader>
       <Container>
-        <Logo src={logo}/>
+        <Logo src={logo} alt="logo"/>
         
         {size < 1024
          ?  <>
