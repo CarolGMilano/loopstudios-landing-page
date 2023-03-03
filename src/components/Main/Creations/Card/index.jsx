@@ -7,11 +7,11 @@ import {
   LinkTitle
 } from "./styles";
 
-const Card = ({ mobile, desktop, name,size }) => {
+const Card = ({ mobile, desktop, name, size }) => {
   return (
     <Item key={name}>
       <ContainerLink href="/">
-        <LinkItem src={size < 1024 ? mobile : desktop} alt={name}/>
+        <LinkItem src={size < 1024 ? mobile : desktop} alt=""/>
         <LinkTitle>{name}</LinkTitle>
       </ContainerLink> 
     </Item>
